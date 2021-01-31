@@ -10,11 +10,16 @@ PWD = $(shell pwd)
 CC_INCLUDE = 	app/inc \
 				drivers/st/inc \
 				CMSIS/inc \
-				CMSIS/device/inc
+				CMSIS/device/inc \
+				Third_Party/FreeRTOS/include \
+				Third_Party/FreeRTOS/portable/GCC/ARM_CM4F \
 
 CC_SOURCE = 	app/src \
 				drivers/st/src \
-				CMSIS/device/src
+				CMSIS/device/src \
+				Third_Party/FreeRTOS \
+				Third_Party/FreeRTOS/portable/GCC/ARM_CM4F \
+				Third_Party/FreeRTOS/portable/MemMang \
 
 S_SOURCE = 		startup
 
